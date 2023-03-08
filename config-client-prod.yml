@@ -1,1 +1,2 @@
-user.role=userProd
+user:
+  role: userProd
