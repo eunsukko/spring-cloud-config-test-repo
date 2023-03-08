@@ -1,1 +1,2 @@
-user.role=userDev
+user:
+  role: userDev
