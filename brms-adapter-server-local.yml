@@ -1,8 +1,8 @@
 woowahan:
   experimentation:
     client:
-      connectTimeout: 1
-      socketTimeout: 1
+      connectTimeout: 200
+      socketTimeout: 200
       maxConnTotal: 20
       maxConnPerRoute: 20
       maxIdleTime: 55000
@@ -11,9 +11,9 @@ woowahan:
       circuitbreaker-enabled: true
     circuitbreaker:
       # connectTimeout, socketTimeout 에 맞게 조정하자
-      slowCallDurationThreshold: 1
-      slidingWindowSize: 3
-      minimumNumberOfCalls: 3
-      permittedNumberOfCallsInHalfOpenState: 3
+      slowCallDurationThreshold: 200
+      slidingWindowSize: 100
+      minimumNumberOfCalls: 80
+      permittedNumberOfCallsInHalfOpenState: 80
       # OPEN에서 HALF_OPEN으로 상태변이가 실행되는 최소 대기 시간(기본값 1분 -> 60000)
       waitDurationInOpenState: 6000
