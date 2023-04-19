@@ -1,8 +1,8 @@
 woowahan:
   experimentation:
     client:
-      connectTimeout: 1
-      socketTimeout: 1
+      connectTimeout: 100
+      socketTimeout: 100
       maxConnTotal: 20
       maxConnPerRoute: 20
       maxIdleTime: 55000
@@ -11,7 +11,7 @@ woowahan:
       circuitbreaker-enabled: true
     circuitbreaker:
       # connectTimeout, socketTimeout 에 맞게 조정하자
-      slowCallDurationThreshold: 1
+      slowCallDurationThreshold: 100
       slidingWindowSize: 100
       minimumNumberOfCalls: 80
       permittedNumberOfCallsInHalfOpenState: 80
