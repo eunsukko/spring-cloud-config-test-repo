@@ -7,7 +7,7 @@ woowahan:
       maxConnPerRoute: 20
       maxIdleTime: 55000
     variation:
-      baseUrl: https://experiment-variant.betabaemin.in
+      baseUrl: localhost:8080
       circuitbreaker-enabled: true
     circuitbreaker:
       # connectTimeout, socketTimeout 에 맞게 조정하자
