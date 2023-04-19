@@ -1,8 +1,8 @@
 woowahan:
   experimentation:
     client:
-      connectTimeout: 200
-      socketTimeout: 200
+      connectTimeout: 400
+      socketTimeout: 400
       maxConnTotal: 20
       maxConnPerRoute: 20
       maxIdleTime: 55000
